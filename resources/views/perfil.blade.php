@@ -2,36 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
     <title>Información Personal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .card {
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            width: 300px;
-        }
-        .card h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .info {
-            margin-bottom: 10px;
-        }
-        .label {
-            font-weight: bold;
-            color: #555;
-        }
-    </style>
 </head>
 <body>
 
@@ -54,6 +26,15 @@
             <span class="label">Estado civil:</span> Soltero
         </div>
     </div>
+
+    <nav class="navbar">
+    <ul>
+        <li><a href="/perfil/intereses">Ir a pasatiempos y gustos</a></li>
+        <li><a href="/perfil/habilidades">Ir a skills</a></li>
+        <li><a href="/perfil/metas">Ir a los objetivos Profesionales</a></li>
+    </ul>
+</nav>
+
 
 </body>
 </html>

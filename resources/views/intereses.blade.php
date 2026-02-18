@@ -2,43 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
     <title>Pasatiempos y Gustos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eef2f7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .card {
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            width: 320px;
-        }
-        .card h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .section {
-            margin-bottom: 15px;
-        }
-        .label {
-            font-weight: bold;
-            color: #444;
-            display: block;
-            margin-bottom: 5px;
-        }
-        ul {
-            margin: 0;
-            padding-left: 20px;
-            color: #555;
-        }
-    </style>
 </head>
 <body>
 
@@ -69,6 +34,13 @@
             </ul>
         </div>
     </div>
+    <nav class="navbar">
+    <ul>
+        <li><a href="/perfil">Ir al perfil</a></li>
+        <li><a href="habilidades">Ir a skills</a></li>
+        <li><a href="metas">Ir a los objetivos Profesionales</a></li>
+    </ul>
+</nav>
 
 </body>
 </html>

@@ -1,0 +1,116 @@
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== PALETA DE COLORES ===== */
+:root {
+    --primary: #2563eb;
+    --secondary: #1e293b;
+    --accent: #38bdf8;
+    --background: #f1f5f9;
+    --card-bg: #ffffff;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+}
+
+/* ===== ESTILO GENERAL ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: var(--card-bg);
+    margin-top: 60px;
+    padding: 40px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--primary);
+}
+
+/* ===== INFO ===== */
+.info {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid var(--primary);
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.label {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    width: 100%;
+    background: var(--secondary);
+    margin-top: 40px;
+    padding: 15px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: var(--primary);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+/* EFECTO HOVER BOTONES */
+.navbar a:hover {
+    background: var(--accent);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+
+    .card {
+        padding: 25px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar a {
+        width: 80%;
+        text-align: center;
+    }
+}

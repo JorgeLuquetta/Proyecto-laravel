@@ -2,45 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
     <title>Objetivos Profesionales</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f6fc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            width: 380px;
-        }
-        .card h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-        .objective {
-            margin-bottom: 15px;
-            padding: 10px;
-            border-left: 4px solid #3498db;
-            background-color: #f9fbff;
-            border-radius: 6px;
-        }
-        .objective-title {
-            font-weight: bold;
-            color: #34495e;
-            margin-bottom: 5px;
-        }
-        .objective-text {
-            color: #555;
-            font-size: 14px;
-        }
-    </style>
 </head>
 <body>
 
@@ -72,6 +35,13 @@
         </div>
 
     </div>
+    <nav class="navbar">
+    <ul>
+        <li><a href="/perfil">Ir al perfil</a></li>
+        <li><a href="intereses">Ir a pasatiempos y gustos</a></li>
+        <li><a href="habilidades">Ir a skills</a></li>
+    </ul>
+</nav>
 
 </body>
 </html>
